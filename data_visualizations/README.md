@@ -10,7 +10,7 @@ The dashboard answers the following questions:
 1. Where are my customers?  
 2. When should I realease my movie? 
 3. How should i release my movie? 
-4. Who should i release my movie to (Demographics)? 
+4. Who should i release my movie to (Audience Demographics)? 
 5. What are the similar films to mine?    
 
 ## Implementation Phases
