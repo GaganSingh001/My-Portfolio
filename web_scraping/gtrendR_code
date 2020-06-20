@@ -1,0 +1,71 @@
+require(gtrendsR)
+
+
+location <- character(3)
+for (i in 1:10){
+	
+###Can be used to iterate through a list 
+  i <- dataset$Title[i]
+
+	search_terms <- c("Black Panther")
+	search_terms <- gsub("\\s*\\([^\\)]+\\)","",as.character(search_terms))
+	search_terms <- gsub("[^[:alnum:][:blank:]+?&/\\-]", "", search_terms)	
+	search_terms <- paste0(search_terms," Film",sep = "")
+
+	error <- tryCatch(
+   	 {
+       		 gtrends(keyword = search_terms,
+    	  	  geo = "US",
+    	   	 time = "all",
+		gprop = "youtube",
+		low_search_volume = FALSE) -> output_results
+    	},
+    		error = function(e){
+       	 "False"
+    	}
+	)
+
+
+       if(error != "False"){
+
+		ds <- data.frame(output_results$interest_by_region)
+
+		ds <- data.frame(polyname = ds$location,hits = ds$hits,ds$keyword)
+		ds <- na.omit(ds)
+		ds$polyname <- tolower(ds$polyname)
+		ds$polyname <- as.int(ds$hits)
+		df <- rbind(df,ds)
+
+	}
+}
+df <- merge(df,state.fips, by = "polyname")
+install.packages('ggthemes', dependencies = TRUE)
+require(maps)
+require(mapproj)
+require(usmap)
+plot_usmap(data = df, 
+           regions="states", 
+            values= "hits") +
+ scale_fill_continuous(
+                          name = "Popularity",label = scales::comma,
+                          limits = c(0,100)) + 
+  
+  theme(legend.position = "right")
+
+#############
+# The following code to create a dataframe and remove duplicated rows is always executed and acts as a preamble for your script: 
+
+# dataset <- data.frame(Title)
+# dataset <- unique(dataset)
+
+# 'dataset' holds the input data for this script
+## 'dataset' holds the input data for this script
+require(ggplot2)
+require(ggmap)
+
+require(maps)
+require(gtrendsR)
+df <- character(3)
+location <- character(3)
+for (i in 1:5){
+	i <- dataset$Title[i]
