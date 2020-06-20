@@ -1,9 +1,9 @@
 
 ## Project Title 
-Preprossing of Data for Analysis
+Preprocessing of Data for Analysis
 
 ## Business Drivers and Significance
-Data preprocessing is crucial in any data mining process as they directly impact success rate of the project. ... Data is said to be unclean if it is missing attribute, attribute values, contain noise or outliers and duplicate or wrong data. Presence of any of these will degrade quality of the results.
+Data preprocessing is crucial in any data mining process as they directly impact success rate of the project. Data is said to be unclean if it is missing attribute, attribute values, contain noise or outliers and duplicate or wrong data. Presence of any of these will degrade quality of the results.
 
 ## Project Overview- 
 Create a script that can be automatically run to clean data and export into an xlsx, csv, or text file. The data to be cleaned comes from Wikipedia and its a list of over 30,000 films and film details.
@@ -11,8 +11,8 @@ Create a script that can be automatically run to clean data and export into an x
 ## Implementation Phases
 1. Analyze each of the data fields to determine which attributes need to cleaned.
 2. Determine how these attributes need to appear in the final output
-2. Create script to clean the data
-3. Export the file to needed format
+3. Create script to clean the data
+4. Export the file to needed format
 
 ## Features
 1. A script that the user can automatically run that will clean the data and output to the needed format.
