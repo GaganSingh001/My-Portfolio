@@ -1,9 +1,9 @@
 
 ## Project title
-A little info about your project and/ or overview that explains **what** the project is about.
+Movie Analysis
 
 ## Motivation
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+The motivation behind this project was to create a dashboard in Power BI to quickly analyze whether a particular film would be successful. 
 
 ## Build status
 Build status of continus integration i.e. travis, appveyor etc. Ex. - 
