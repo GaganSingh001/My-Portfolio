@@ -22,8 +22,8 @@ Creation of various scripts to pull data from Social Networks (Twitter, Instagra
 
 ## Features
 1. Wikepedia dataset of films & film details a .csv file.
-2. Twitter, Instagram, Youtube comments output into a sentiment Wordcloud.
-3. Google Trend search data into an audience location Heat Map.
+2. Twitter, Instagram, Youtube comments output into a bar graph.
+3. Google Trend search data into an audience location Bubble Map.
 
 ## Timeline
 From start to finish, this project took about 4 weeks to develop. This is dependent on how accessible the customer is to provide feedback.
@@ -31,7 +31,6 @@ From start to finish, this project took about 4 weeks to develop. This is depend
 ## Screenshots
 ![Alt text](/web_scraping/Movie_Followers_Map.PNG?raw=true "Movie Followers gathered From Google Trends")
 ![Alt text](/web_scraping/Interracial_Films_Sentiment_Analysis.PNG?raw=true "Sentiment Around Books")
-![Alt text](/web_scraping/movie_followers_map.PNG?raw=true "Google Trends R script to pull locations from search queries")
 
 ## Technologies Used
 1. R for the api integration of ML Azure Predictive Analytics
@@ -43,6 +42,6 @@ From start to finish, this project took about 4 weeks to develop. This is depend
 #### Anything else that seems useful
 
 ## License
-Code is licensed to Reelanaytics, Inc.
+I have included some of the scripts used to scape the data.
 
 
