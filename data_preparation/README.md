@@ -21,7 +21,7 @@ Create a script that can be automatically run to clean data and export into an x
 From start to finish, this script took about 2 weeks to develop. This is dependent on how accessible the customer is to provide feedback. (The web scraping of the data was a part of a different phase)
 
 ## Before & After Screenshots
-![Alt text](https://github.com/Reelanalytics/main/blob/master/data_preparation/Film_Dataset_After.csv?raw=true "Before Data Preprocessing")
+[Contribution guidelines for this project](data_preparation/Film_Dataset_Before.csv)
 ![Alt text](https://github.com/Reelanalytics/main/blob/master/data_preparation/Film_Dataset_After.csv?raw=true "After Data Preprocessing")
 
 ## Technologies Used
