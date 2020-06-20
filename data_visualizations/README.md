@@ -35,7 +35,6 @@ The dashboard answers the following questions:
 From start to finish, this project took about 4 weeks to develop. This is dependent on how accessible the customer is to provide feedback.
 
 ## Screenshots
-data_visualizations/movieAnalysis.PNG
 ![Alt text](/data_visualizations/movieAnalysis.PNG?raw=true "Film Analysis Dashboard")
 
 ## Technologies Used
