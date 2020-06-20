@@ -22,7 +22,7 @@ From start to finish, this script took about 2 weeks to develop. This is depende
 
 ## Before & After Screenshots
 1. [Data Before Preprossing](data_preparation/Film_Dataset_Before.csv)
-2. [Data Before Preprossing](data_preparation/Film_Dataset_After.csv)
+2. [Data After Preprossing](data_preparation/Film_Dataset_After.csv)
 
 ## Technologies Used
 1. Used R to create the script to Preprocess the data.
