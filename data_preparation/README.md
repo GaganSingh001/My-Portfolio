@@ -6,7 +6,8 @@ Preprocessing of Data for Analysis
 Data preprocessing is crucial in any data mining process as they directly impact success rate of the project. Data is said to be unclean if it is missing attribute, attribute values, contain noise or outliers and duplicate or wrong data. Presence of any of these will degrade quality of the results.
 
 ## Project Overview- 
-Create a script that can be automatically run to clean data and export into an xlsx, csv, or text file. The data to be cleaned comes from Wikipedia and its a list of over 30,000 films and film details.
+1. Create a script that can be automatically run to clean data and export into an xlsx, csv, or text file. The data to be cleaned comes from Wikipedia and its a list of over 30,000 films and film details.
+2. Add new fields that we felt would benifit the analysis. A lot of times the customer does not know what they want, so based on the requirements we included additional fields that would be conducive to their analysis. (See Before & After screenshots)
  
 ## Implementation Phases
 1. Analyze each of the data fields to determine which attributes need to cleaned.
