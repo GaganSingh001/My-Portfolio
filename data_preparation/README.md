@@ -1,52 +1,34 @@
 
 ## Project Title 
-Film Analysis
+Preprossing of data for analysis
 
 ## Business Drivers and Significance
-The motivation behind this project was to create a dashboard in Power BI to quickly analyze whether a particular film would be successful. Also to provide the details that factor in with the determination.
+Data preprocessing is crucial in any data mining process as they directly impact success rate of the project. ... Data is said to be unclean if it is missing attribute, attribute values, contain noise or outliers and duplicate or wrong data. Presence of any of these will degrade quality of the results.
 
 ## Project Overview- 
-The dashboard answers the following questions: 
-1. Where are my customers?  
-2. When should I realease my movie? 
-3. How should i release my movie? 
-4. Who should i release my movie to (Audience Demographics)? 
-5. What are the similar films to mine?    
-
+Create a script that can be automatically run to clean data and export into an xlsx, csv, or text file. The data to be cleaned comes from Wikipedia and its a list of over 30,000 films and film details.
+ 
 ## Implementation Phases
-1. Requirements Gathering
-2. Initial Design and User Approval of the Design
-3. Development
-4. User Acceptance Testing
-5. Deployment to Production
+1. Analyze each of the data fields to determine which attributes need to cleaned.
+2. Determine how these attributes need to appear in the final output
+2. Create script to clean the data
+3. Export the file to needed format
 
 ## Features
-1. (KPI) Movie revenue prediction (percentile)
-2. (KPI) Award Prediction 
-3. Audience Demographics
-4. Best Release Month & Season
-5. Similar Films
-6. Release Mediums
-7. (KPI) Average Budget
-8. Best Release Locations based on Audience Demographics
-9. Best Genre Determinations
+1. A script that the user can automatically run that will clean the data and output to the needed format.
 
 ## Timeline
-From start to finish, this project took about 4 weeks to develop. This is dependent on how accessible the customer is to provide feedback.
+From start to finish, this script took about 2 weeks to develop. This is dependent on how accessible the customer is to provide feedback. (The web scraping of the data was a part of a different phase)
 
-## Screenshots
-![Alt text](/data_visualizations/movieAnalysis.PNG?raw=true "Film Analysis Dashboard")
+## Before & After Screenshots
+![Alt text](/data_visualizations/movieAnalysis.PNG?raw=true "Before Data Preprocessing")
+![Alt text](/data_visualizations/movieAnalysis.PNG?raw=true "After Data Preprocessing")
 
 ## Technologies Used
-1. R for the api integration of ML Azure Predictive Analytics
-2. R for Google Trends - used to get the locations of people who are searching for this movie title online
-3. R to do the Webscraping of all Movies on Wikepedia, including movie details
-4. R to do the Data Preparation and Cleanup in order to prepare the data for analysis
-5. Power Bi to do the data visualization.
-
-#### Anything else that seems useful
+1. Used R to create the script to Preprocess the data.
+2. The script was created to export the final preprocessws data to a .csv file.
 
 ## License
-Code is licensed to Reelanaytics, Inc.
+Code is licensed to Reelanaytics, Inc. but snippets are share to augment understanding of the project.
 
 
