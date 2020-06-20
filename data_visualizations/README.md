@@ -2,18 +2,17 @@
 ## Project Title 
 Movie Analysis
 
-## Purpose And Need
-The motivation behind this project was to create a dashboard in Power BI to quickly analyze whether a particular film would be successful. 
+## Business Drivers and Significance
+The motivation behind this project was to create a dashboard in Power BI to quickly analyze whether a particular film would be successful. Also to provide the details that factor in with the determination.
 
 ## Project Overview
 - 
-
-[![Build Status](https://travis-ci.org/akashnimare/foco.svg?branch=master)](https://travis-ci.org/akashnimare/foco)
-[![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/akashnimare/foco?branch=master&svg=true)](https://ci.appveyor.com/project/akashnimare/foco/branch/master)
-
-## Business Drivers and Significance
-To determine if this movie has a potential for success
-
+The dashboard answers the following questions: 
+a. Where are my customers?  
+b. When should I realease my movie? 
+c. How should i release my movie? 
+d. Who should i release my movie to (Demographics)? 
+e. What are the similar films to mine?    
 
 ## Implementation Phases
 1. Requirements Gathering
@@ -23,10 +22,15 @@ To determine if this movie has a potential for success
 5. Deployment to Production
 
 ## Features
-1. Movie revenue prediction (Quantile) 10 being lower revenue and 100 being high
-2. Award Prediction - Predicts whether a movie has the potential of winning awards
-3. Movie Demographics
-4. The dashboard answers the following questions: a. Where are my customers?  b. When should I realease my movie? c. How should i release my movie? Who should i release my movie to (Demographics)? What are the similar films to mine?     
+1. (KPI) Movie revenue prediction (percentile)
+2. (KPI) Award Prediction 
+3. Audience Demographics
+4. Best Release Month & Season
+5. Similar Films
+6. Release Mediums
+7. (KPI) Average Budget
+8. Best Release Locations based on Audience Demographics
+9. Best Genre Determinations
 
 ## Timeline
 From start to finish, this project took about 4 weeks to develop. This is dependent on how accessible the customer is to provide feedback.
@@ -44,6 +48,6 @@ From start to finish, this project took about 4 weeks to develop. This is depend
 #### Anything else that seems useful
 
 ## License
-A short snippet describing the license (MIT, Apache etc)
+Code is licensed to Reelanaytics, Inc.
 
-MIT © [Yourname]()
+
