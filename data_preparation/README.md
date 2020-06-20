@@ -1,6 +1,6 @@
 
 ## Project Title 
-Preprossing of data for analysis
+Preprossing of Data for Analysis
 
 ## Business Drivers and Significance
 Data preprocessing is crucial in any data mining process as they directly impact success rate of the project. ... Data is said to be unclean if it is missing attribute, attribute values, contain noise or outliers and duplicate or wrong data. Presence of any of these will degrade quality of the results.
