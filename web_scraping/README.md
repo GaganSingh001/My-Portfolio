@@ -29,7 +29,7 @@ Creation of various scripts to pull data from Social Networks (Twitter, Instagra
 From start to finish, this project took about 4 weeks to develop. This is dependent on how accessible the customer is to provide feedback.
 
 ## Screenshots
-![Alt text](/web_scraping/movie_followers_map.PNG?raw=true "Movie Followers gathered From Google Trends")
+![Alt text](/web_scraping/Movie_Followers_Map.PNG?raw=true "Movie Followers gathered From Google Trends")
 ![Alt text](/web_scraping/wordclouds.PNG?raw=true "Sentiment Around Books")
 ![Alt text](/web_scraping/movie_followers_map.PNG?raw=true "Google Trends R script to pull locations from search queries")
 
