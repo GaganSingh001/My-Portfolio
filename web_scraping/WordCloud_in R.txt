@@ -1,0 +1,44 @@
+Wordcloud
+
+****Clean keywords****************888
+reviews <- read.csv("reviews.csv", stringsAsFactors = FALSE)
+
+reviews_text <- paste(grep("critic", reviews$Comment, value = TRUE), collapse=" ")
+
+review_source <- VectorSource(reviews_text)
+
+corpus<- Corpus(review_source)
+
+myCorpus <- tm_map(corpus, removeWords, stopwords('english'))
+myCorpus <- tm_map(myCorpus, content_transformer(tolower))
+myCorpus <- tm_map(myCorpus, removePunctuation)
+
+dtm <- DocumentTermMatrix(myCorpus)
+dtm2 <- as.matrix(dtm)
+
+frequency <- colSums(dtm2)
+frequency <- sort(frequency, decreasing=TRUE)
+
+install.packages('wordcloud')
+
+library(wordcloud)
+
+words<-names(frequency)
+
+wordcloud(words[1:100], frequency[1:100])
+
+
+barplot(frequency, main="Car Distribution", 
+  	xlab="Number of Gears")
+
+
+story or plot
+critics
+soundtrack or music or cinematography
+
+
+
+
+
+
+

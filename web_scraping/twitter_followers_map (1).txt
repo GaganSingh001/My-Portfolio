@@ -1,0 +1,130 @@
+if (!require("twitteR")) {
+  install.packages("twitteR", repos="http://cran.rstudio.com/") 
+  library("twitteR")
+}
+
+if (!require("data.table")) {
+  install.packages("data.table", repos="http://cran.rstudio.com/") 
+  library("data.table")
+}
+
+library("ggmap")
+library(maptools)
+library(maps)
+
+api_key <- 'VMt5mNrzxqy0l4sqSsLudPp6V' 
+api_secret <- 'pIcbwVidCk1mLNsQXBBAphv1SPWEsaUGs2mlbVWHY15PU05lHx'
+token_secret <- 'uWSVqJbR8ogHDAFPIE9HySs1wTsu9NUg5S3q05HhO97dI'
+token <- '744213583559598080-tcGbDRC2zI7J5oC3u7y6L4DB1DJ2RcC' 
+setup_twitter_oauth(api_key, api_secret, token, token_secret)
+
+girlstripmovie <- getUser("girlstripmovie")
+location(girlstripmovie)
+
+girlstripmovie_follower_IDs<-girlstripmovie$getFollowers(retryOnRateLimit=180)
+
+length(girlstripmovie_follower_IDs)
+
+girlstripmovie_followers_df = rbindlist(lapply(girlstripmovie_follower_IDs,as.data.frame))
+head(girlstripmovie_followers_df$location, 10)
+
+girlstripmovie_followers_df<-subset(girlstripmovie_followers_df, location!="")
+girlstripmovie_followers_df$location<-gsub("%", " ",girlstripmovie_followers_df$location)
+***clean data manually*****
+write.csv(girlstripmovie_followers_df$location, file = "MyData.csv")
+girlstripmovie_followers_df <- read.csv(file.choose(), header = T, stringAsFactors = FALSE)
+
+
+#Install key package helpers:
+source("https://raw.githubusercontent.com/LucasPuente/geocoding/master/geocode_helpers.R")
+#Install modified version of the geocode function
+#(that now includes the api_key parameter):
+source("https://raw.githubusercontent.com/LucasPuente/geocoding/master/modified_geocode.R")
+Before you proceed with geocoding the location strings you acquired in Step 2, you’ll also need to generate a function that specifics exactly what you want to extract from the Google Maps API.
+
+geocode_apply<-function(x){
+    geocode(x, source = "google", output = "all", api_key="AIzaSyAzQ9dgjdS9SH0yoJnFgQPvjpPXdEytr_s")
+}
+
+geocode_results<-sapply(girlstripmovie_followers_df$location, geocode_apply, simplify = F)
+
+condition_a <- sapply(geocode_results, function(x) x["status"]=="OK")
+geocode_results<-geocode_results[condition_a]
+
+******One other check you’ll have to do is to look for misformatted entries 
+for(i in 1:length(geocode_results)){
+  dynamic_j<-length(geocode_results[[i]]$results[[1]]$address_components)
+  for(j in 1:dynamic_j){
+    if(length(geocode_results[[i]]$results[[1]]$address_components[[j]]$types)>2){
+      geocode_results[[i]]$results[[1]]$address_components[[j]]$types<-geocode_results[[i]]$results[[1]]$address_components[[j]]$types[(length(geocode_results[[i]]$results[[1]]$address_components[[j]]$types)-1):length(geocode_results[[i]]$results[[1]]$address_components[[j]]$types)]
+    }
+  }
+  if(length(geocode_results[[i]]$results[[1]]$types)>2){
+    geocode_results[[i]]$results[[1]]$types<-geocode_results[[i]]$results[[1]]$types[(length(geocode_results[[i]]$results[[1]]$types)-1):length(geocode_results[[i]]$results[[1]]$types)]
+  }
+  if(length(geocode_results[[i]]$results[[1]]$types)<1){
+    geocode_results[[i]]$results[[1]]$types<-"Unknown"
+  }
+  dynamic_k<-length(geocode_results[[i]]$results[[1]]$address_components)
+  for(k in 1:dynamic_k){
+    if(length(geocode_results[[i]]$results[[1]]$address_components[[k]]$types)<1){
+      geocode_results[[i]]$results[[1]]$address_components[[k]]$types<-"Unknown"
+    }
+  }
+  if(length(geocode_results[[i]]$results[[1]]$postcode_localities)>2){
+    geocode_results[[i]]$results[[1]]$postcode_localities<-geocode_results[[i]]$results[[1]]$postcode_localities[(length(geocode_results[[i]]$results[[1]]$postcode_localities)-1):length(geocode_results[[i]]$results[[1]]$postcode_localities)]
+  }
+}
+
+***********
+results_b<-lapply(geocode_results, as.data.frame)
+
+results_c<-lapply(results_b,function(x) subset(x, select=c("results.formatted_address",
+                                                           "results.geometry.location")))
+
+results_d<-lapply(results_c,function(x) data.frame(Location=x[1,"results.formatted_address"],
+                                                   lat=x[1,"results.geometry.location"],
+                                                   lng=x[2,"results.geometry.location"]))
+results_e<-rbindlist(results_d)
+
+results_f<-results_e[,Original_Location:=names(results_d)]
+
+american_results <- results_f
+
+head(american_results,5)
+
+american_results$commas<-sapply(american_results$Location, function(x)
+  length(as.numeric(gregexpr(",", as.character(x))[[1]])))
+american_results<-subset(american_results, commas==2)
+#Drop the "commas" column:
+american_results<-subset(american_results, select=-commas)
+nrow(american_results)
+
+ipak <- function(pkg){
+    new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
+    if (length(new.pkg)) 
+        install.packages(new.pkg, dependencies = TRUE, repos="http://cran.rstudio.com/")
+    sapply(pkg, require, character.only = TRUE)
+}
+packages <- c("maps", "mapproj")
+ipak(packages)
+
+****state map
+albers_proj<-map("state", proj="albers", param=c(39, 45), 
+                 col="#999999", fill=FALSE, bg=NA, lwd=0.2, add=FALSE, resolution=1)
+
+#Add points to it:
+points(mapproject(american_results$lng, american_results$lat), col=NA, bg="#00000030", pch=21, cex=1.0)
+
+#Add a title:
+mtext("The Geography of @GirlsTripMovie Followers", side = 3, line = -3.5, outer = T, cex=1.5, font=3)
+
+
+******World Map
+mp <- NULL
+mapWorld <- borders("world", colour="black", fill="black") 
+mp <- ggplot() +   mapWorld
+
+
+mp <- mp+ geom_point(aes(x=american_results$lng, y=american_results$lat) ,color="blue", size=1) 
+mp
