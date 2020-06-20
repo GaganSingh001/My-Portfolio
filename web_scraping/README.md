@@ -30,7 +30,7 @@ From start to finish, this project took about 4 weeks to develop. This is depend
 
 ## Screenshots
 ![Alt text](/web_scraping/Movie_Followers_Map.PNG?raw=true "Movie Followers gathered From Google Trends")
-![Alt text](/web_scraping/wordClouds.JPG?raw=true "Sentiment Around Books")
+![Alt text](/web_scraping/Interracial_Films_Sentiment_Analysis.PNG?raw=true "Sentiment Around Books")
 ![Alt text](/web_scraping/movie_followers_map.PNG?raw=true "Google Trends R script to pull locations from search queries")
 
 ## Technologies Used
