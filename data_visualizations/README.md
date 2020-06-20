@@ -36,6 +36,7 @@ From start to finish, this project took about 4 weeks to develop. This is depend
 
 ## Screenshots
 data_visualizations/movieAnalysis.PNG
+![Alt text](/data_visualizations/movieAnalysis.PNG?raw=true "Film Analysis Dashboard")
 
 ## Technologies Used
 1. R for the api integration of ML Azure Predictive Analytics
