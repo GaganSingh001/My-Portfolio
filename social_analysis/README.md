@@ -27,8 +27,7 @@ I wanted to do a comparison of different movies to determine where the followers
 From start to finish, this script took about 4 weeks to develop. This is dependent on how accessible the customer is to provide feedback. (The web scraping of the data was a part of a different phase)
 
 ## Screenshots
-1. [Data Before Preprossing](/data_preparation/Film_Dataset_Before.csv)
-2. [Data After Preprossing](/data_preparation/Film_Dataset_After.csv)
+1.![Alt text](/social_analysis/social_2.gif?raw=true "Social Sentiment App")
 
 ## Technologies Used
 1. Used R to create the script to scrap the data, preprocess the data, categorize the data, geo-code the data and display the results.
