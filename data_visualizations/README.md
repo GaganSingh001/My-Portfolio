@@ -8,11 +8,11 @@ The motivation behind this project was to create a dashboard in Power BI to quic
 ## Project Overview
 - 
 The dashboard answers the following questions: 
-a. Where are my customers?  
-b. When should I realease my movie? 
-c. How should i release my movie? 
-d. Who should i release my movie to (Demographics)? 
-e. What are the similar films to mine?    
+1. Where are my customers?  
+2. When should I realease my movie? 
+3. How should i release my movie? 
+4. Who should i release my movie to (Demographics)? 
+5. What are the similar films to mine?    
 
 ## Implementation Phases
 1. Requirements Gathering
