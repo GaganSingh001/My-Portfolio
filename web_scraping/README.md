@@ -30,9 +30,8 @@ From start to finish, this project took about 4 weeks to develop. This is depend
 
 ## Screenshots
 ![Alt text](/web_scraping/Movie_Followers_Map.PNG?raw=true "Movie Followers gathered From Google Trends")
-![Alt text](/web_scraping/wordclouds.jpg?raw=true "Sentiment Around Books")
+![Alt text](/web_scraping/wordClouds.JPG?raw=true "Sentiment Around Books")
 ![Alt text](/web_scraping/movie_followers_map.PNG?raw=true "Google Trends R script to pull locations from search queries")
-![Alt text](/data_visualizations/movieAnalysis.PNG?raw=true "Film Analysis Dashboard")
 
 ## Technologies Used
 1. R for the api integration of ML Azure Predictive Analytics
