@@ -5,8 +5,7 @@ Movie Analysis
 ## Business Drivers and Significance
 The motivation behind this project was to create a dashboard in Power BI to quickly analyze whether a particular film would be successful. Also to provide the details that factor in with the determination.
 
-## Project Overview
-- 
+## Project Overview- 
 The dashboard answers the following questions: 
 1. Where are my customers?  
 2. When should I realease my movie? 
