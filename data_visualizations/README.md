@@ -1,5 +1,5 @@
 
-## Project title
+## Project Title
 Movie Analysis
 
 ## Motivation
