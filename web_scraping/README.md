@@ -7,12 +7,11 @@ Web Scraping & API Integration
 Most companies do no have the data necessary to do any type of analysis. This is where web scraping and api integration comes in. Sometimes, you’ve got to go out and get the data you need. The ability to collect unique data sets can really set you apart from the pack, and being able to access APIs and scrape the web for new data stories is the best way to get data nobody else is working with.
 
 ## Project Overview- 
-Creation web scraping scripts to obtain data from Social Networks (Twitter, Instagram, Youtube) and sites such as Wikepidea, The Numbers, IMDB to name just a few. 
+Creation of various scripts to pull data from Social Networks (Twitter, Instagram, Youtube) and sites such as Wikepidea, Google Trends, to name a few. Any site with data is a candidate, but for this project, here were the requirements.
 
 1. Wikepedia -  Movies and Movie Details 
 2. Twitter, Instagram, Youtube - Comments
 3. Google Trends - Search queries and locations
-4. ML Azure Prediction integration - Prediction Scores   
 
 ## Implementation Phases
 1. Requirements Gathering
@@ -24,8 +23,7 @@ Creation web scraping scripts to obtain data from Social Networks (Twitter, Inst
 ## Features
 1. Wikepedia dataset of films & film details a .csv file.
 2. Twitter, Instagram, Youtube comments output into a sentiment Wordcloud.
-3. Google Trend search data into a Heat Map to find out where the audience is cominig from.
-4. ML Azure predictive data exported into a spreadsheet with ability to make future predictions.
+3. Google Trend search data into an audience location Heat Map.
 
 ## Timeline
 From start to finish, this project took about 4 weeks to develop. This is dependent on how accessible the customer is to provide feedback.
