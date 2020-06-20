@@ -12,29 +12,21 @@ The motivation behind this project was to create a dashboard in Power BI to quic
 [![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/akashnimare/foco?branch=master&svg=true)](https://ci.appveyor.com/project/akashnimare/foco/branch/master)
 
 ## Business Drivers and Significance
-If you're using any code style like xo, standard etc. That will help others while contributing to your project. Ex. -
+To determine if this movie has a potential for success
 
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
- 
+
 ## Implementation Phases
 1. Requirements Gathering
-2. Initial Design and Approval
+2. Initial Design and User Approval of the Design
 3. Development
 4. User Acceptance Testing
-5. Deployment
+5. Deployment to Production
 
 ## Features
 1. Movie revenue prediction (Quantile) 10 being lower revenue and 100 being high
 2. Award Prediction - Predicts whether a movie has the potential of winning awards
 3. Movie Demographics
-4. The dashboard answers the question:
-   a. Where are my customers? (Month & Season)
-   b. When to release my movie?
-   c. How to best release my movie?
-   d. What are my similar films?   
-   e. Who are my customers? 
-   
-   
+4. The dashboard answers the following questions: a. Where are my customers?  b. When should I realease my movie? c. How should i release my movie? Who should i release my movie to (Demographics)? What are the similar films to mine?     
 
 ## Timeline
 From start to finish, this project took about 4 weeks to develop. This is dependent on how accessible the customer is to provide feedback.
@@ -43,8 +35,11 @@ From start to finish, this project took about 4 weeks to develop. This is depend
 
 
 ## Technologies Used
-
-
+1. R for the api integration of ML Azure Predictive Analytics
+2. R for Google Trends - used to get the locations of people who are searching for this movie title online
+3. R to do the Webscraping of all Movies on Wikepedia, including movie details
+4. R to do the Data Preparation and Cleanup in order to prepare the data for analysis
+5. Power Bi to do the data visualization.
 
 #### Anything else that seems useful
 
