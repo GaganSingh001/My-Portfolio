@@ -1,21 +1,22 @@
 
 
 ## Project Title 
-Predict A Film's Success
-Predict 
+1. Predict A Film's Success
+2. Predict Job Performance 
 
 ## Business Drivers and Significance
-Data preprocessing is crucial in any data mining process as they directly impact success rate of the project. Data is said to be unclean if it is missing attribute, attribute values, contain noise or outliers and duplicate or wrong data. Presence of any of these will degrade quality of the results.
+1. Before they began producing a film they wanted to predict if the film has a chance of success comparative to historically success similar films.
+2. Predict job performance based on attributes of the person being interviewed compared to a list of past employees performance. 
 
 ## Project Overview- 
-1. Create a script that can be automatically run to clean data and export into an xlsx, csv, or text file. The data to be cleaned comes from Wikipedia and its a list of over 30,000 films and film details.
-2. Add new fields that we felt would benifit the analysis. A lot of times the customer does not know what they want, so based on the requirements we included additional fields that would be conducive to their analysis. (See Before & After screenshots)
+1. Create a model in ML Azure from historical films and their details that will produce an API that will predict future films success.
+2. Create a script in R that will create a model that will predict job performance of future applicants compared to historical performance of past employess.
  
 ## Implementation Phases
-1. Analyze each of the data fields to determine which attributes need to cleaned.
-2. Determine how these attributes need to appear in the final output
-3. Create script to clean the data
-4. Export the file to needed format
+1. Preprocess and prepare the data for prediction.
+2. Create the models used to make future predictions.
+3. Run each file through the prediction engines.
+4. Export results in a .csv file.
 
 ## Features
 1. A script that the user can automatically run that will clean the data and output to the needed format.
