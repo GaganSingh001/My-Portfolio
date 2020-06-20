@@ -32,7 +32,9 @@ If you're using any code style like xo, standard etc. That will help others whil
    b. When to release my movie?
    c. How to best release my movie?
    d. What are my similar films?   
-   e. Who are my customers?   
+   e. Who are my customers? 
+   
+   
 
 ## Timeline
 From start to finish, this project took about 4 weeks to develop. This is dependent on how accessible the customer is to provide feedback.
