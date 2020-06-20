@@ -10,7 +10,7 @@ Most companies do no have the data necessary to do any type of analysis. This is
 Creation of various scripts to pull data from Social Networks (Twitter, Instagram, Youtube) and sites such as Wikepidea, Google Trends, to name a few. Any site with data is a candidate, but for this project, here were the requirements.
 
 1. Wikepedia -  Movies and Movie Details 
-2. Twitter, Instagram, Youtube - Comments
+2. Twitter, Instagram, Youtube (Books) - Comments
 3. Google Trends - Search queries and locations
 
 ## Implementation Phases
@@ -29,7 +29,10 @@ Creation of various scripts to pull data from Social Networks (Twitter, Instagra
 From start to finish, this project took about 4 weeks to develop. This is dependent on how accessible the customer is to provide feedback.
 
 ## Screenshots
-![Alt text](/data_visualizations/movieAnalysis.PNG?raw=true "Film Analysis Dashboard")
+![Alt text](/web_scraping/movie_followers_map.PNG?raw=true "Movie Followers gathered From Google Trends")
+![Alt text](/web_scraping/wordclouds.PNG?raw=true "Sentiment Around Books")
+![Alt text](/web_scraping/movie_followers_map.PNG?raw=true "Google Trends R script to pull locations from search queries")
+
 
 ## Technologies Used
 1. R for the api integration of ML Azure Predictive Analytics
