@@ -23,8 +23,8 @@
 From start to finish, the total process took about 3 weeks to develop. This is dependent on how accessible the customer is to provide feedback. 
 
 ## Screenshots
-1. [Data Before Preprossing](/data_preparation/Film_Dataset_Before.csv)
-2. [Data After Preprossing](/data_preparation/Film_Dataset_After.csv)
+1. [Data Before Prediction with no CLV column](/predictive_analytics/Customer_Lifetime_1.csv)
+2. [Data After Prediction with a new CLV column](/data_preparation/Film_Dataset_After.csv)
 
 ## Technologies Used
 1. ML Azure Studio
