@@ -9,8 +9,8 @@ This analysis is needed to determine the variables that directly affect Customer
 ## Project Overview-
 1. Find out what variables are important and eliminate from the dataset variables that are not needed and have no affect on the analysis.
 2. Create a Decisions Tree. A decision tree can be used to visually and explicitly represent decisions and decision making. As the name goes, it uses a tree-like model of decisions. 
-3. Create a Correleation Plot. A correlation plot shows what fields relate most to other fields in the dataset. For instance, budget & profit. We know the the higher the budget the greater the profit. The correlation plot will show that relationship graphically
-4. Create a Cluster chart. Building off the previous Correlation plot i will create a cluster diagram using the fields that relate the most and create a cluster diagram to determine if there are any clusters. Knowing what cluster a customer falls in can assists in marketing efforts.  Customers in the same cluster are more like other customers in that cluster.
+3. Create a Correleation Plot. A correlation plot shows what fields relate most to other fields in the dataset. For instance,budget & profit. We know most of the time the higher the budget the greater the profit. The correlation plot will show those types of relationships graphically
+4. Create a Cluster chart. Building off the previous Correlation plot i will create a cluster diagram using the the most important correlating fields to determine if there are any clusters or groupings. Knowing what cluster a customer falls in can assists in marketing efforts.  Customers in the same cluster are more like other customers in that cluster.
 
 ## Implementation Phases
 
