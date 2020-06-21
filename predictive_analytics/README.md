@@ -1,36 +1,35 @@
 
 
 ## Project Title 
-1. Predict A Film's Success
-2. Predict Job Performance 
-
+1. Predict Customer Lifetime Value (CLV)
+ 
 ## Business Drivers and Significance
-1. Before they began producing a film they wanted to predict if the film has a chance of success comparative to historically success similar films.
-2. Predict job performance based on attributes of the person being interviewed compared to a list of past employees performance. 
+1. They would like to predict the Lifetime Value of all new customers. Knowing a customers lifetime value would be benificial when determine the marketing dollars to spend acquiring new customers. 
 
 ## Project Overview- 
-1. Create a model in ML Azure from historical films and their details that will produce an API that will predict future films success.
-2. Create a script in R that will create a model that will predict job performance of future applicants compared to historical performance of past employess.
+1. Train a model in ML Azure Studio that will predict which quantile (10 - 100 with 10 being the lowest value), new customers fall in. This will also create an api that can be integrated into an application that will predict new customers. 
+2. Use R to connect to the api, make the prediction and append the new data to the existing dataset. This data can then be used to create reports and dashboards.
  
-## Implementation Phases
-1. Preprocess and prepare the data for prediction.
-2. Create the models used to make future predictions.
-3. Run each file through the prediction engines.
-4. Export results in a .csv file.
+## Implementation Process
+1. Preprocess and prepare the data using ML Azure Studio.
+2. Train the model in ML Azure Studio.
+3. Create the api in ML Azure Studio.
+4. Create the R Script needed run the prediction using the api and then appended the new data onto the existing dataset.
 
 ## Features
-1. A script that the user can automatically run that will clean the data and output to the needed format.
+1. A spreadshet with an additional column that contains the predicted value for each customer.
 
 ## Timeline
-From start to finish, this script took about 2 weeks to develop. This is dependent on how accessible the customer is to provide feedback. (The web scraping of the data was a part of a different phase)
+From start to finish, the total process took about 3 weeks to develop. This is dependent on how accessible the customer is to provide feedback. 
 
 ## Screenshots
 1. [Data Before Preprossing](/data_preparation/Film_Dataset_Before.csv)
 2. [Data After Preprossing](/data_preparation/Film_Dataset_After.csv)
 
 ## Technologies Used
-1. Used R to create the script to Preprocess the data.
-2. The script was created to export the final preprocessws data to a .csv file.
+1. ML Azure Studio
+2. R 
+3. Excel
 
 ## License
 Code is licensed to Reelanaytics, Inc. but snippets are share to augment understanding of the project.
