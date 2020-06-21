@@ -23,7 +23,7 @@ From start to finish, this script took about 4 weeks to complete. This is depend
 5. The heatmap shows the regions where most of the comments orginated. 
 
 ## Screenshots
-1.![Alt text](/social_analysis/social_2.gif?raw=true "Social Sentiment App")
+![Alt text](/social_analysis/social_2.gif?raw=true "Social Sentiment App")
 
 ## Technologies Used
 1. Used R to create the script to scrap the data, preprocess the data, categorize the data, geo-code the data and display the results.
