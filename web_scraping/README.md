@@ -21,27 +21,23 @@ Creation of various scripts to pull data from Social Networks (Twitter, Instagra
 5. Deployment to Production
 
 ## Features
-1. Wikepedia dataset of films & film details a .csv file.
+1. Wikepedia dataset of films & film details exported into a .csv file.
 2. Twitter, Instagram, Youtube comments output into a bar graph.
-3. Google Trend search data into an audience location Bubble Map.
+3. Google Trend search data into an audience location Bubble Mameline
+1. Frp.
 
 ## Timeline
-From start to finish, this project took about 4 weeks to develop. This is dependent on how accessible the customer is to provide feedback.
+1. From start to finish, this project took about 4 weeks to develop. This is always dependent on how accessible the customer is to provide feedback.
 
 ## Screenshots
 ![Alt text](/web_scraping/Movie_Followers_Map.PNG?raw=true "Movie Followers gathered From Google Trends")
 ![Alt text](/web_scraping/Interracial_Films_Sentiment_Analysis.PNG?raw=true "Sentiment Around Books")
 
 ## Technologies Used
-1. R for the api integration of ML Azure Predictive Analytics
-2. R for Google Trends - used to get the locations of people who are searching for this movie title online
-3. R to do the Webscraping of all Movies on Wikepedia, including movie details
-4. R to do the Data Preparation and Cleanup in order to prepare the data for analysis
-5. Power Bi to do the data visualization.
-
-#### Anything else that seems useful
+1. R for Google Trends - used to get the locations of people who are searching for this movie title online
+2. R to do the Webscraping of all Movies on Wikepedia, including movie details
+3. R to do the Data Preparation and Cleanup in order to prepare the data for analysis
+4. Power Bi to do the data visualization.
 
 ## License
 I have included some of the scripts used to scape the data.
-
-
