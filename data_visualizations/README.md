@@ -1,9 +1,9 @@
 
 ## Project Title 
-Film Analysis
+Data Visualization
 
 ## Business Drivers and Significance
-The motivation behind this project was to create a dashboard in Power BI to quickly analyze whether a particular film would be successful. Also to provide the details that factor in with the determination.
+The motivation behind this project was to create a dashboard in Power BI to quickly analyze whether a future film would be successful. Also to provide the details that factor in with the determination.
 
 ## Project Overview- 
 The dashboard answers the following questions: 
@@ -32,7 +32,7 @@ The dashboard answers the following questions:
 9. Best Genre Determinations
 
 ## Timeline
-From start to finish, this project took about 4 weeks to develop. This is dependent on how accessible the customer is to provide feedback.
+From start to finish, this project took about 4 weeks to complete. This is dependent on how accessible the customer is to provide feedback.
 
 ## Screenshots
 ![Alt text](/data_visualizations/movieAnalysis.PNG?raw=true "Film Analysis Dashboard")
