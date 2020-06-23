@@ -23,7 +23,7 @@
 From start to finish, the total process took about 3 weeks to develop. This is dependent on how accessible the customer is to provide feedback. 
 
 ## Screenshots
-1. After pre-processing the data,creating the model in ML Azure, in the screenshot below i have a trained model with a predicted column. The predicted column predicts new customer's CLV. The prediction engine scores each customer from 10 to 100, with 10 being on the low end up to 100 on the high end. Also an API was created. I integrate that API into an application to predict new customers. I normally use it with Power BI, so that i can include the new customer scores into values in a dashboard.
+1. After pre-processing the data,creating the model in ML Azure, in the screenshot below i have a trained model with a predicted column. The predicted column predicts new customer's CLV. The prediction engine scores each customer from 10 to 100, with 10 being on the low end up to 100 on the high end. Also an API was created. I could integrate that API into an application to predict new customers. I normally use it with Power BI, so that i can include the new customer scores into values in a dashboard. I did not for this project. 
 
 ![Alt text](/predictive_analytics/scored_dataset.PNG?raw=true "Film Analysis Dashboard")
 
@@ -33,6 +33,6 @@ From start to finish, the total process took about 3 weeks to develop. This is d
 3. Excel
 
 ## License
-Code is licensed to Reelanaytics, Inc. but snippets are share to augment understanding of the project.
+I have included the code i used to get new predicted data and merge back into an existing dataset. This code can be used directly in Power Bi.
 
 
