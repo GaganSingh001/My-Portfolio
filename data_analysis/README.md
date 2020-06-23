@@ -25,12 +25,13 @@ This analysis is needed to determine the variables that directly affect Customer
 From start to finish, this script took about 1 week to develop. This was dependent on how accessible the customer is to provide feedback. 
 
 ## Screenshots 
-![Alt text](/data_analysis/importance.PNG?raw=true "Importance Variables")
 1. The most important variables in determining Customer Lifetime Value are No of Policies, Monthly Premium, Total Claim Amt, Months Since Last Claim, Vehicle Class, Months Since Policy Inception and Income. We will use these variables to do further analysis. The other variables do not have a signicant impact on CLV.
-![Alt text](/data_analysis/correlation.png?raw=true "Variables That Correlate")
+![Alt text](/data_analysis/importance.PNG?raw=true "Importance Variables")
 2. The darker the color (blue), the higher the correlation between variables. There is less correlation between the reds. For instance the from the chart it looks like the higher the coverage, the higher the Monthly Premium Amount.
-![Alt text](/data_analysis/dt.PNG?raw=true "Decision Tree")
+![Alt text](/data_analysis/correlation.png?raw=true "Variables That Correlate")
 3. For customers with No of Policies greater/equal to 2.5 per customer, gives you the greater sum total CLV, considering the number of customers. For customers with Monthly Premium greater/equal to  $96.5, gives you the greater sum total CLV. considering the number of customers.
+![Alt text](/data_analysis/dt.PNG?raw=true "Decision Tree")
+
 ![Alt text](/data_analysis/cluster.PNG?raw=true "Clusters")
 4.
 ## Technologies Used
