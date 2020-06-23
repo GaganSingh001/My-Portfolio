@@ -25,7 +25,7 @@ This analysis is needed to determine the variables that directly affect Customer
 From start to finish, this script took about 1 week to develop. This was dependent on how accessible the customer is to provide feedback. 
 
 ## Screenshots
-1. ![Alt text](/data_analysis/Importance.PNG?raw=true "Importance Variables")
+1. ![Alt text](/data_analysis/importance.PNG?raw=true "Importance Variables")
 2. ![Alt text](/data_analysis/correlations.png?raw=true "Variables That Correlate")
 3. ![Alt text](/data_analysis/decision_tree.png?raw=true "Decision Tree")
 4. ![Alt text](/data_analysis/cluster.PNG?raw=true "Clusters")
