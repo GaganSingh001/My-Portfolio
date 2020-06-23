@@ -23,12 +23,13 @@
 From start to finish, the total process took about 3 weeks to develop. This is dependent on how accessible the customer is to provide feedback. 
 
 ## Screenshots
-1. [Dataset set with predicted value columns](/predictive_analytics/CLV-Results dataset.csv)
-2. ![Alt text](/predictive_analytics/scored_dataset.PNG?raw=true "Film Analysis Dashboard")
+1. After pre-processing the data,creating the model in ML Azure, in the screenshot below i have a trained model with a predicted column. The predicted column predicts new customer's CLV. The prediction engine scores each customer from 10 to 100, with 10 being on the low end up to 100 on the high end. Also an API was created. I integrate that API into an application to predict new customers. I normally use it with Power BI, so that i can include the new customer scores into values in a dashboard.
+
+![Alt text](/predictive_analytics/scored_dataset.PNG?raw=true "Film Analysis Dashboard")
 
 ## Technologies Used
 1. ML Azure Studio
-2. R 
+2. R-Scrip to integrate the api into Power BI
 3. Excel
 
 ## License
