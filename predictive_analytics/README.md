@@ -24,7 +24,7 @@ From start to finish, the total process took about 3 weeks to develop. This is d
 
 ## Screenshots
 1. [Dataset set with predicted value columns](/predictive_analytics/CLV-Results dataset.csv)
-2. [Data After Prediction with a new CLV column](/data_preparation/Film_Dataset_After.csv)
+2. ![Alt text](/data_visualizations/movieAnalysis.PNG?raw=true "Film Analysis Dashboard")
 
 ## Technologies Used
 1. ML Azure Studio
