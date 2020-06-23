@@ -25,8 +25,10 @@ This analysis is needed to determine the variables that directly affect Customer
 From start to finish, this script took about 1 week to develop. This was dependent on how accessible the customer is to provide feedback. 
 
 ## Screenshots
-1. [Data Before Preprossing](/data_preparation/Film_Dataset_Before.csv)
-2. [Data After Preprossing](/data_preparation/Film_Dataset_After.csv)
+1. ![Alt text](/data_visualizations/movieAnalysis.PNG?raw=true "Film Analysis Dashboard")
+2. ![Alt text](/data_visualizations/movieAnalysis.PNG?raw=true "Film Analysis Dashboard")
+3. ![Alt text](/data_visualizations/movieAnalysis.PNG?raw=true "Film Analysis Dashboard")
+4. ![Alt text](/data_visualizations/movieAnalysis.PNG?raw=true "Film Analysis Dashboard")
 
 ## Technologies Used
 1. R is used for development and Power BI is used for diplaying the data.
