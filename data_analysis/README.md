@@ -26,8 +26,12 @@ From start to finish, this script took about 1 week to develop. This was depende
 
 ## Screenshots
 1. ![Alt text](/data_analysis/importance.PNG?raw=true "Importance Variables")
+The most importance variables toward Customer Lifetime Value are No of Policies, Monthly Premium, Total Claim Amt, Months Since Last Claim, Vehicle Class, Months Since Policy Inception and Income.
 2. ![Alt text](/data_analysis/correlation.png?raw=true "Variables That Correlate")
+There is a huge correlation between the ones in the darker blue. No correlation between the ones in red.
 3. ![Alt text](/data_analysis/decision_tree.png?raw=true "Decision Tree")
+For customers with No of Policies greater/equal to 2.5 per customer, gives you the greater sum total CLV. Per customer CLV ($7,055)
+For customers with Monthly Premium greater/equal to  $96.5, gives you the greater sum total CLV.  Per customer CLV ($21018)
 4. ![Alt text](/data_analysis/cluster.PNG?raw=true "Clusters")
 
 ## Technologies Used
