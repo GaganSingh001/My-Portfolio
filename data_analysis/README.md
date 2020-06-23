@@ -1,7 +1,7 @@
 
 
 ## Project Title 
-Analyze an Insurance Dataset
+Insurance Analysis
 
 ## Business Drivers and Significance
 This analysis is needed to determine the variables that directly affect Customer Lifetime Value(CLV). Understanding these variable will help a company focus on areas that are important.
