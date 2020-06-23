@@ -1,1 +1,43 @@
+install.packages('rattle')
+install.packages('rpart.plot')
+install.packages('RColorBrewer')
+library(rattle)
+library(rpart.plot)
+library(RColorBrewer)
+library(corrgram)
+library(cluster)
 
+
+
+###Find Variables that are importance
+Imp <- ###Importance.csv
+rf <- randomForest(Customer_Lifetime_Value~.,data=imp,importance = TRUE)
+varImpPlot(rf)
+varmportance(rf)
+
+
+####Correlation Plot - Using only important variables
+corr <- ###Correlation.csv
+
+res <- cor(corr)
+round(res, 2)
+
+corrgram(res, order=NULL, lower.panel=panel.shade,
+          upper.panel=NULL, text.panel=panel.txt,
+          main="Insurance Data")
+
+
+####Decision Tree - Using important variables
+dt <- ###Decision_Tree.csv
+fit <- rpart(Customer_Lifetime_Value~., data  = dt, method = "anova",  control=rpart.control(minsplit=12, cp=0.01))
+fancyRpartPlot(fit)
+fancyRpartPlot(fit,cex=.5,digits=-6)
+fancyRpartPlot(fit,tweak = 1.5,digits=-2.5)
+
+
+####Clusters -Using important variables
+cluster <- ###Clusters.csv
+fit <- kmeans(cluster, 5)
+
+clusplot(mydata, fit$cluster, color=TRUE, shade=TRUE,
+   labels=2, lines=0)
