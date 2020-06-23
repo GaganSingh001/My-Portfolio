@@ -38,7 +38,7 @@ From start to finish, this script took about 1 week to develop. This was depende
 1. R is used for development and Power BI is used for diplaying the data.
 
 ## License
-Code is licensed to Reelanaytics, Inc. but snippets are share to augment understanding of the project.
+
 
 
 
