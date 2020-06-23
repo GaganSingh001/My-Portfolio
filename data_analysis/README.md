@@ -31,9 +31,9 @@ From start to finish, this script took about 1 week to develop. This was depende
 ![Alt text](/data_analysis/correlation.png?raw=true "Variables That Correlate")
 3. For customers with No of Policies greater/equal to 2.5 per customer, gives you the greater sum total CLV, considering the number of customers. For customers with Monthly Premium greater/equal to  $96.5, gives you the greater sum total CLV. considering the number of customers.
 ![Alt text](/data_analysis/dt.PNG?raw=true "Decision Tree")
+4. Analyzing Income and Customer Lifetime Value you can see below the distinct clusters.
+![Alt text](/data_analysis/clusters.PNG?raw=true "Clusters")
 
-![Alt text](/data_analysis/cluster.PNG?raw=true "Clusters")
-4.
 ## Technologies Used
 1. R is used for development and Power BI is used for diplaying the data.
 
