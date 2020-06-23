@@ -27,7 +27,7 @@ From start to finish, this script took about 1 week to develop. This was depende
 ## Screenshots
 1. ![Alt text](/data_analysis/Importance.PNG?raw=true "Importance Variables")
 2. ![Alt text](/data_analysis/correlations.PNG.PNG?raw=true "Variables That Correlate")
-3. ![Alt text](/data_analysis/Importance.PNG?raw=true "Decision Tree")
+3. ![Alt text](/data_analysis/Decision Tree.png?raw=true "Decision Tree")
 4. ![Alt text](/data_analysis/cluster.PNG?raw=true "Clusters")
 
 ## Technologies Used
