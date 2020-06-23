@@ -10,21 +10,20 @@ Most companies do no have the data necessary to do any type of analysis. This is
 Creation of various scripts to pull data from Social Networks (Twitter, Instagram, Youtube) and sites such as Wikepidea, Google Trends, to name a few. Any site with data is a candidate, but for this project, here were the requirements.
 
 1. Wikepedia -  Movies and Movie Details 
-2. Twitter, Instagram, Youtube (Books) - Comments
+2. Twitter, Instagram, Youtube - Comments
 3. Google Trends - Search queries and locations
 
 ## Implementation Phases
-1. Requirements Gathering
-2. Initial Design and User Approval of the Design
-3. Development
-4. User Acceptance Testing
-5. Deployment to Production
+1. Created the scripts to scrape and pre-process the latest comments from each of the social networks.
+2. Created a script to categorize the comments, so that the data could be displayed into a bar graph.
+3. Created a script to connect to google trends api to get the locations of people who have searched for each of the movie titles.
+4. Used Power BI to display the locations on a map.
 
 ## Features
 1. Wikepedia dataset of films & film details exported into a .csv file.
 2. Twitter, Instagram, Youtube comments output into a bar graph.
 3. Google Trend search data into an audience location Bubble Mameline
-1. Frp.
+
 
 ## Timeline
 1. From start to finish, this project took about 4 weeks to develop. This is always dependent on how accessible the customer is to provide feedback.
