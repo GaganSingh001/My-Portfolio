@@ -1,0 +1,40 @@
+Correlation analysis is a method of statistical evaluation used to study the strength of a relationship between two, numerically measured, continuous variables (e.g. height and weight). This particular type of analysis is useful when a researcher wants to establish if there are possible connections between variables.
+
+
+df = df[!duplicated(df$Title),]
+dfc <- df[, c(3,4,5,6,7,8,11,13)]
+dfc <- na.omit(dfc)
+dfc <- as.data.frame(dfc)
+
+        dfc$Month <- ifelse(dfc$Month ==  "Jan",1,dfc$Month)
+dfc$Month <- ifelse(dfc$Month ==  "Feb",2,dfc$Month)
+dfc$Month <- ifelse(dfc$Month ==  "Mar",3,dfc$Month)
+dfc$Month <- ifelse(dfc$Month ==  "Apr",4,dfc$Month)
+dfc$Month <- ifelse(dfc$Month ==  "May",5,dfc$Month)
+dfc$Month <- ifelse(dfc$Month ==  "Jun",6,dfc$Month)
+dfc$Month <- ifelse(dfc$Month ==  "Jul",7,dfc$Month)
+dfc$Month <- ifelse(dfc$Month ==  "Aug",8,dfc$Month)
+dfc$Month <- ifelse(dfc$Month ==  "Sep",9,dfc$Month)
+dfc$Month <- ifelse(dfc$Month ==  "Oct",10,dfc$Month)
+dfc$Month <- ifelse(dfc$Month ==  "Nov",11,dfc$Month)
+dfc$Month <- ifelse(dfc$Month ==  "Dec",12,dfc$Month)
+
+
+        dfc$Creative <- ifelse(dfc$Creative ==  "Contemporary Fiction",1,dfc$Creative)
+dfc$Creative <- ifelse(dfc$Creative ==  "Dramatization",2,dfc$Creative)
+dfc$Creative <- ifelse(dfc$Creative ==  "Fantasy",3,dfc$Creative)
+dfc$Creative <- ifelse(dfc$Creative ==  "Historical Fiction",4,dfc$Creative)
+dfc$Creative <- ifelse(dfc$Creative ==  "Kids Fiction",5,dfc$Creative)
+dfc$Creative <- ifelse(dfc$Creative ==  "Super Hero",6,dfc$Creative)
+dfc$Creative <- ifelse(dfc$Creative ==  "Science Fiction",7,dfc$Creative)
+dfc$Creative <- as.numeric(dfc$Creative)
+dfc$Month <- as.numeric(dfc$Month)
+
+dfc<- dfc %>%
+     remove_rownames() %>%
+     column_to_rownames(var = 'Title')
+res <- cor(dfc)
+round(res, 2)
+library(corrplot)
+corrplot(res, type = "upper", order = "hclust", 
+         tl.col = "black", tl.srt = 45)
