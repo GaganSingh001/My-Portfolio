@@ -19,7 +19,7 @@ This analysis is needed to determine the variables that directly affect Customer
 3. Create a Power Bi visuals for each of R scripts developed from #2. These visual will be R Script visuals.
 
 ## Features
-1. An intuitive dashboard that allow the user to analyzes and display key factors that affect CLV.
+1. An intuitive aggragate dashboard that allows the user to display the key factors that affect CLV.
 
 ## Timeline
 From start to finish, this script took about 1 week to develop. This was dependent on how accessible the customer is to provide feedback. 
@@ -38,7 +38,7 @@ From start to finish, this script took about 1 week to develop. This was depende
 1. R is used for development and Power BI is used for diplaying the data.
 
 ## License
-
+Due to  privacy, i cannot diplay the final dashboard, but i did provide some of the code used to do the analysis.
 
 
 
