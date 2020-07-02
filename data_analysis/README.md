@@ -29,7 +29,7 @@ From start to finish, this script took about 1 week to develop. This was depende
 ![Alt text](/data_analysis/importance.PNG?raw=true "Importance Variables")
 2. The darker the color (blue), the higher the correlation between variables. There is less correlation between the reds. For instance looking at the chart below, it is showing that the higher the coverage, the higher the Monthly Premium Amount and that there is no correlation between income and Total Claim Amount.
 ![Alt text](/data_analysis/correlation.png?raw=true "Variables That Correlate")
-3. Looking at the decision tree it seems that the people with Number of Policies greater/equal to 96.5 give you the greater CLV.
+3. Looking at the decision tree it seems that the people with the Monthly Premium Amount greater/equal to 96.5 give you the greater CLV.
 ![Alt text](/data_analysis/dt.PNG?raw=true "Decision Tree")
 4. Analyzing Income and Customer Lifetime Value you can see below the distinct clusters of customers based on income and that the most prevalent clusters are the lighter blue and pink. If you  planning to do a marketing campain those are two distinct groups you can target.
 ![Alt text](/data_analysis/clusters.PNG?raw=true "Clusters")
