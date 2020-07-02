@@ -33,6 +33,6 @@ From start to finish, the total process took about 3 weeks to develop. This is d
 3. Excel
 
 ## License
-I have included the code i used to get new predicted data and merge back into an existing dataset. This code can be used directly in Power Bi.
+I have included the code i used to get <new predicted data> from the ML Azure api and merge back into an existing dataset using R. This has nothing to do with this project but is code from a different project.
 
 
