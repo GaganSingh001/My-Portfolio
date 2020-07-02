@@ -17,7 +17,7 @@
 4. Create the R Script needed run the prediction using the api and then appended the new data onto the existing dataset.
 
 ## Features
-1. A spreadshet with an additional column that contains the predicted value for each customer.
+1. A spreadsheet with an additional column that contains the predicted value for each customer.
 
 ## Timeline
 From start to finish, the total process took about 3 weeks to develop. This is dependent on how accessible the customer is to provide feedback. 
