@@ -40,7 +40,7 @@ From start to finish, this project took about 4 weeks to complete. This is depen
 ## Technologies Used
 1. R for the api integration of ML Azure Predictive Analytics
 2. R for Google Trends - used to get the locations of people who are searching for this movie title online
-3. R to do the Webscraping of all Movies on Wikepedia, including movie details
+3. R to do the Webscraping of all Movies on Wikipedia, including movie details
 4. R to do the Data Preparation and Cleanup in order to prepare the data for analysis
 5. Power Bi to do the data visualization.
 
