@@ -4,11 +4,11 @@
 Web Scraping & API Integration 
 
 ## Business Drivers and Significance
-This is not specific to a company, this is just the process I used to get data from a variety of sources that have api's and the one where i directly scrape a website. 
+This is not specific to a company, this is just the process I used to get data from a variety of sources including api's and directly from websites. 
 Most companies do no have the data necessary to do any type of analysis. This is where web scraping and api integration comes in. Sometimes, you’ve got to go out and get the data you need. The ability to collect unique data sets can really set you apart from the pack, and being able to access APIs and scrape the web for new data stories is the best way to get data nobody else is working with.
 
 ## Project Overview- 
-I wanted to use movie data as an example, because wikepedia has a vast amount of information in regards to each and every movie down to each movie's details. 
+I wanted to use movie data an example, because wikepedia has a vast amount of information in regards to each and every movie down to each movie's details. 
 Creation of various scripts to scrape data from websites and ingest data from api's.
 
 1. Wikipedia -  Movies and Movie Details 
