@@ -31,6 +31,6 @@ From start to finish, this script took about 4 weeks to complete. This is depend
 1. Used R to create the script to scrape the data from the different networks, peprocess and clean the data, categorize the data, Google Geocoding to geo-code the data and used SHINY display the results. The results can be displayed in any type of visualize such as a bar graph. 
 
 ## License
-Code is licensed to Reelanaytics, Inc. but shared snippets to augment understanding of the project.
+The code is license but if you are interested i can replicate for your company.
 
 
