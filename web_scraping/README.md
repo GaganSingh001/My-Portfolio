@@ -1,22 +1,24 @@
 
 
 ## Project Title 
-Web Scraping & API Integration
+Web Scraping & API Integration 
 
 ## Business Drivers and Significance
+This is not specific to a company, this is just the process I used to get data from a variety of sources that have api's and the one where i directly scrape a website. 
 Most companies do no have the data necessary to do any type of analysis. This is where web scraping and api integration comes in. Sometimes, you’ve got to go out and get the data you need. The ability to collect unique data sets can really set you apart from the pack, and being able to access APIs and scrape the web for new data stories is the best way to get data nobody else is working with.
 
 ## Project Overview- 
-Creation of various scripts to pull data from Social Networks (Twitter, Instagram, Youtube) and sites such as Wikepidea, Google Trends, to name a few. Any site with data is a candidate, but for this project, here were the requirements.
+I wanted to use movie data as an example, because wikepedia has a vast amount of information in regards to each and every movie down to each movie's details. 
+Creation of various scripts to scrape data from websites and ingest data from api's.
 
-1. Wikepedia -  Movies and Movie Details 
+1. Wikipedia -  Movies and Movie Details 
 2. Twitter, Instagram, Youtube - Comments
 3. Google Trends - Search queries and locations
 
 ## Implementation Phases
 1. Created the scripts to scrape and pre-process the latest comments from each of the social networks.
-2. Created a script to categorize the comments, so that the data could be displayed into a bar graph.
-3. Created a script to connect to google trends api to get the locations of people who have searched for each of the movie titles.
+3. Created a script to connect to google trends api to get the locations of people who have searched for item.
+3. Scaped data from Wikipedia.
 4. Used Power BI to display the locations on a map.
 
 ## Features
@@ -24,6 +26,7 @@ Creation of various scripts to pull data from Social Networks (Twitter, Instagra
 2. Twitter, Instagram, Youtube comments output into a bar graph.
 3. Google Trend search data into an audience location Bubble Mameline
 
+## See screens of 2 & 3 below.
 
 ## Timeline
 1. From start to finish, this project took about 4 weeks to develop. This is always dependent on how accessible the customer is to provide feedback.
